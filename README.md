@@ -1,1 +1,1 @@
-# IndustrySafetyDetection_YoloV7_WebApp_Deployment
+# IndustrySafe: Industry Safety Monitoring Using AI
