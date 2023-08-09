@@ -1,0 +1,5 @@
+train: F:\\CV_Projects\\IndustrySafetyDetection_YoloV7_WebApp_Deployment\\train.txt
+val: F:\\CV_Projects\\IndustrySafetyDetection_YoloV7_WebApp_Deployment\\val.txt
+
+nc: 5
+names: ['Helmet', 'Goggles', 'Jacket', 'Gloves', 'Footwear']
