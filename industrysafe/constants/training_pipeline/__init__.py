@@ -37,3 +37,10 @@ MODEL_TRAINER_PRETRAINED_WEIGHT_URL = "https://github.com/WongKinYiu/yolov7/rele
 MODEL_TRAINER_NO_EPOCHS:int = 1
 
 MODEL_TRAINER_BATCH_SIZE:int = 8
+
+
+"""
+Model Pusher Constants
+"""
+MODEL_BUCKET_NAME = "indsafe-model"
+S3_MODEL_NAME = "best.pt"

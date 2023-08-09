@@ -4,11 +4,12 @@ from industrysafe.exception import IndustryException
 from industrysafe.components.data_ingestion import DataIngestion
 from industrysafe.components.data_validation import DataValidation
 from industrysafe.components.model_trainer import ModelTrainer
+from industrysafe.components.model_pusher import ModelPusher
 from industrysafe.configuration.s3_operations import S3Operation
 
-from industrysafe.entity.config_entity import DataIngestionConfig, DataValidationConfig, ModelTrainerConfig
+from industrysafe.entity.config_entity import DataIngestionConfig, DataValidationConfig, ModelTrainerConfig, ModelPusherConfig
 
-from industrysafe.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact, ModelTrainerArtifact
+from industrysafe.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact, ModelTrainerArtifact, ModelPusherArtifacts
 
 
 
@@ -17,6 +18,7 @@ class TrainPipeline:
         self.data_ingestion_config = DataIngestionConfig()
         self.data_validation_config = DataValidationConfig()
         self.model_trainer_config = ModelTrainerConfig()
+        self.model_pusher_config = ModelPusherConfig()
         self.s3_operations = S3Operation()
 
 
@@ -76,6 +78,21 @@ class TrainPipeline:
 
         except Exception as e:
             raise IndustryException(e, sys)
+        
+
+    def start_model_pusher(self, model_trainer_artifact: ModelTrainerArtifact, s3: S3Operation)-> ModelPusherArtifacts:
+
+        try:
+            model_pusher = ModelPusher(
+                model_pusher_config=self.model_pusher_config,
+                model_trainer_artifact= model_trainer_artifact,
+                s3=s3
+                
+            )
+            model_pusher_artifact = model_pusher.initiate_model_pusher()
+            return model_pusher_artifact
+        except Exception as e:
+            raise IndustryException(e, sys)
 
         
 
@@ -89,6 +106,7 @@ class TrainPipeline:
 
             if data_validation_artifact.validation_status == True:
                  model_trainer_artifact = self.start_model_trainer()
+                 model_pusher_artifact = self.start_model_pusher(model_trainer_artifact=model_trainer_artifact,s3=self.s3_operations)
 
             else:
                 raise Exception("Your data is not in correct format")
