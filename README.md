@@ -16,4 +16,4 @@
 
 - While building our solution, we shall be using the YoloV7 Object Detection algorithm and will use MAP as the metric to detect the model performance.
 
--The objects that will will use to detect are: HELMETS, GOGGLES, SAFETY JACKET, HAND GLOVES, SAFETY SHOES.
+- The objects that will will use to detect are: HELMETS, GOGGLES, SAFETY JACKET, HAND GLOVES, SAFETY SHOES.
