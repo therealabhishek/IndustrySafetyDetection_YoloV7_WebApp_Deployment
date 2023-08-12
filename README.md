@@ -26,7 +26,6 @@
 ### STEPS INVOLVED IN THE PROJECT:
 
 1. Data Ingestion
-![Alt text](<Data Ingetions.png>)
 2. Data Validation
 3. Model Trainer
 4. Model Pusher
