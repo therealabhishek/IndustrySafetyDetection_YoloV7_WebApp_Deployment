@@ -26,7 +26,7 @@
 ### STEPS INVOLVED IN THE PROJECT:
 
 1. Data Ingestion
-   ![Data Ingestion Pipeline](F:/CV_Projects/IndustrySafetyDetection_YoloV7_WebApp_Deployment/flowcharts/Data Ingetions.png)
+![Alt text](<Data Ingetions.png>)
 2. Data Validation
 3. Model Trainer
 4. Model Pusher
