@@ -26,7 +26,8 @@
 ### STEPS INVOLVED IN THE PROJECT:
 
 1. Data Ingestion
-![Alt text](<Data Ingetions.png>)
-2. Data Validation
-3. Model Trainer
-4. Model Pusher
+   ![Data Ingetions](https://github.com/therealabhishek/IndustrySafetyDetection_YoloV7_WebApp_Deployment/assets/18556069/93627efb-0594-4ad8-86f2-b071b8e581e0)
+
+3. Data Validation
+4. Model Trainer
+5. Model Pusher
