@@ -4,6 +4,10 @@
 
  ![Demo](https://github.com/therealabhishek/IndustrySafetyDetection_YoloV7_WebApp_Deployment/blob/main/flowcharts/local_deploy.PNG)
 
+ The image above shows our application demo, where we have detected the Helmet and the Safety gloves that the person is wearing.
+
+ Here, the model has been locally deployed.
+
 ### What is the need for Industry Safety Monitoring/Detection Using AI?
 
 - Industrial Accidents and Deaths have been recorded in 1000s in India and the US due to negligence regarding wearing of Safety Equipment while working in factories and construction sites etc. 
