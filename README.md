@@ -2,7 +2,7 @@
 
 ### Application Demo
 
- ![Demo]()
+ ![Demo](https://github.com/therealabhishek/IndustrySafetyDetection_YoloV7_WebApp_Deployment/blob/main/flowcharts/local_deploy.PNG)
 
 ### What is the need for Industry Safety Monitoring/Detection Using AI?
 
