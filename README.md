@@ -1,5 +1,9 @@
 # IndustrySafe: Industry Safety Monitoring Using AI
 
+### Application Demo
+
+ ![Demo]()
+
 ### What is the need for Industry Safety Monitoring/Detection Using AI?
 
 - Industrial Accidents and Deaths have been recorded in 1000s in India and the US due to negligence regarding wearing of Safety Equipment while working in factories and construction sites etc. 
