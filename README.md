@@ -60,6 +60,16 @@ In Model Pusher stage, we shall save the model created in the Model Trainer stag
 5. Model Deployment
    ![deployment](https://github.com/therealabhishek/IndustrySafetyDetection_YoloV7_WebApp_Deployment/assets/18556069/ae9cbdce-6f9b-435e-b0b9-a0c5e284e62a)
 
-In the Deployment stage, we shall create a Docker image of the local project and deploy it using the AWS EC2 instance.
+Currently, we have deployed the app locally, but we can create a Docker image of the local project and deploy it using the AWS EC2 instance.
+
+### To Run the App locally
+
+- Clone the repository.
+
+- Install the requirements using "pip install -r requirements.txt".
+
+- Run "python app.py".
+
+- Upload the image using the "Upload" button and click "Predict" to get the prediction.
 
 
